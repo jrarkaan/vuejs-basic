@@ -1,14 +1,21 @@
 new Vue({
     el: '#vue-app',
     data: {
-        name: 'Shaun',
-        job: 'Backend Developer',
-        website: 'https://www.google.com',
-        websiteTag: 'https://www.google.com'
+        age: 25,
+        x: 0,
+        y: 0
     },
     methods: {
-        great: function(time){
-            return `Good ${time} ${this.name}`;
+        add: function(ageParams){
+            this.age += ageParams;
+        },
+        substract: function(ageParams){
+            this.age -= ageParams;
+        },
+        updateXY: function(event){
+            const { offsetX, offsetY } = event;
+            this.x = offsetX;
+            this.y = offsetY;
         }
     }
 })
