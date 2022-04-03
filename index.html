@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue Js Tutorial</title>
+    <link href="styles.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+</head>
+<body>
+    <div id="vue-app">
+        <h1>{{ great('afternoon') }}</h1>
+        <p>Name: {{ name }}</p>
+        <p>Job: {{ job }}</p>
+        <a v-bind:href="website">Kilk</a>
+        <input name="job" v-bind:value="job" />
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
