@@ -1,14 +1,18 @@
 new Vue({
     el: '#vue-app',
     data: {
-        name: 'Shaun',
-        job: 'Backend Developer',
-        website: 'https://www.google.com',
-        websiteTag: 'https://www.google.com'
+        avalaible: false,
+        nearby: false
     },
     methods: {
-        great: function(time){
-            return `Good ${time} ${this.name}`;
+
+    },
+    computed: {
+        compClasses: function(){
+            return {
+                avalaible: this.avalaible,
+                nearby: this.nearby
+            }
         }
     }
 })

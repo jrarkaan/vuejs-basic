@@ -8,11 +8,20 @@
 </head>
 <body>
     <div id="vue-app">
-        <h1>{{ great('afternoon') }}</h1>
-        <p>Name: {{ name }}</p>
-        <p>Job: {{ job }}</p>
-        <a v-bind:href="website">Kilk</a>
-        <input name="job" v-bind:value="job" />
+        <h1>Dynamic CSS</h1>
+        <h2>Example 1</h2>
+<!--        <div-->
+<!--            v-bind:class="{avalaible: avalaible}"-->
+<!--            v-on:click="avalaible=!avalaible"-->
+<!--        >-->
+<!--            <span>Ryu</span>-->
+<!--        </div>-->
+        <h2>Example 2</h2>
+        <button v-on:click="nearby = !nearby">Toogle nearby</button>
+        <button v-on:click="avalaible = !avalaible">Toogle avalaible</button>
+        <div v-bind:class="compClasses">
+            <span>Ryu</span>
+        </div>
     </div>
 
     <script src="app.js"></script>
